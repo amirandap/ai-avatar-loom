@@ -1,0 +1,3 @@
+Quiero explicar a mi equipo cómo enviar un reporte de avances semanal.
+El reporte debe incluir logros, bloqueos y próximos pasos. Debe ser breve y concreto.
+No inventar nombres de sistemas ni fechas.

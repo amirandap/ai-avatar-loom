@@ -1,0 +1,10 @@
+{
+  "videos": [
+    {
+      "title": "Reporte de avances",
+      "script": "sample_script.txt",
+      "aspect_ratio": "16:9",
+      "resolution": "1080p"
+    }
+  ]
+}

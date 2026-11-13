@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-avatar-loom"
+version = "0.1.0"
+description = "Grok + ElevenLabs cloned voice + HeyGen avatar video pipeline, with LiveKit realtime extension"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27,<1",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+realtime = ["livekit-agents[xai,elevenlabs,lemonslice,silero]~=1.8", "livekit-api>=1.0,<2"]
+dev = ["pytest>=8,<10", "ruff>=0.7,<1"]
+
+[project.scripts]
+avatar-loom = "avatar_loom.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
